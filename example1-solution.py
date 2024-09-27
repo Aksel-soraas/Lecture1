@@ -23,6 +23,9 @@ def argmax(values):
 
     N = len(values)
 
+    if N == 0:
+        raise ValueError('Empty sequences are not supported')
+
     imax = 0
     vmax = values[0]
 
